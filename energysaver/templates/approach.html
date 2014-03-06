@@ -1,0 +1,457 @@
+
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  {% load staticfiles %}
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>GoodTwin | Relationship Focused. Creative Problem Solvers. True Story. </title>
+  <meta name="description" content="GoodTwin is a digital agency that creates socially engaging websites and mobile experiences. We mix usable design and hand crafted development for our agency partners and direct clients. The result is campaigns and sites that will have your brand advocates loyal, happy, and wondering what you'll do next.">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+
+  <!--- Facebook Open Graph Data -->
+  <meta property="og:title" content="GoodTwin's Website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://goodtwin.co" />
+  <meta property="og:image" content="http://goodtwin.co/assets/facebook/fbhero.jpg" />
+  <meta property="og:site_name" content="GoodTwin | Relationship Focused. Multi-Device Web Experiences." />
+  <meta property="fb:admins" content="10103305452503574,10150945632455726,10151217804430681" />
+
+  <!--- jQuery Mobile & Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="author" href="/humans.txt" />
+  <link href="{% static "energysaver.css" %}" media="all" rel="stylesheet" type="text/css" />
+  <script src="{% static "energysaver.js" %}" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="SUYXOKEg4Y8A47PxWEb5lz3A3gczApFZ0xTB+L+vU/w=" name="csrf-token" />
+</head>
+<body>
+  <!--[if lt IE 8]>
+    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+  <![endif]-->
+
+  <!-- facebook javascript sdk -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <p class="flash"></p>
+  <p class="notice"></p>
+  <p class="alert"></p>
+  <header>
+    <nav class="main">
+      <a href="/" data-pjax-link class="logo">
+        GoodTwin
+      </a>
+      <ul class="nav-elems">
+        <li data-subnav=".about" ><a href="/about/" data-pjax-link>About</a></li>
+        <li><a href="/life/" data-pjax-link>Life</a></li>
+        <li data-subnav=".book" ><a href="/book/" data-pjax-link>Book</a></li>
+        <li class="contact"><a href="/contact">Hire Us</a></li>
+      </ul>
+    </nav>
+    <nav class="secondaries">
+      <div class="about text">
+        <ul>
+          <li><a href="/about/approach" data-pjax-link>Approach</a></li>
+          <li><a href="/contact#contactApply" data-pjax-link>Contact</a></li>
+        </ul>
+      </div>
+      <div class="book sliding">
+        <ul>
+          <li>
+            <a href="/book/bigbrain" data-pjax-link class="highlight">
+              <div class="container">
+                <h4>Big Brain</h4>
+                <img src="/assets/nav/bigbrain.jpg" alt="big brain tattoos">
+              </div>
+            </a>
+          </li>
+          <li >
+            <a href="/book/ovaova" data-pjax-link>
+              <h4>Ova Ova</h4>
+              <img src="{% static "img/nav/ovaova.jpg" %}" alt="Ova Ova natural birth control">
+            </a>
+          </li>
+          <li>
+            <a href="/book/eliteform" data-pjax-link>
+              <h4>Elite Form</h4>
+              <img src="/assets/nav/eliteform.jpg" alt="Elite Form">
+            </a>
+          </li>
+          <li>
+            <a href="/book/adventip" data-pjax-link>
+              <h4>Advent IP</h4>
+              <img src="/assets/nav/adventip.jpg" alt="Advent - an Intellectual Property Firm">
+            </a>
+          </li>
+          <li>
+            <a href="/book/walmart" data-pjax-link>
+              <h4>Walmart</h4>
+              <img src="/assets/nav/walmart.jpg" alt="Walmart Employee Quiz">
+            </a>
+          </li>
+          <li>
+            <a href="/book/corkscrew" data-pjax-link>
+              <h4>Corkscrew</h4>
+              <img src="/assets/nav/corkscrew.jpg" alt="corkscrew wine and cheese">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="blog sliding">
+        <ul>
+<!--           <li>
+            <img src="">
+          </li>
+          <li>
+            <img src="">
+          </li>
+          <li>
+            <img src="">
+          </li>
+          <li>
+            <img src="">
+          </li>
+          <li>
+            <img src="">
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div data-pjax-container>
+    <img src="{% static "img/approach/top-leaf.png" %}" alt="leaves and digital shape" class="top-leaf" />
+<section class="approach">
+	<div class="heading">
+		<h2>Tried and True.</h2>
+		<div data-picture data-alt="tried and true custom typography">
+			<div data-src="{% static "img/approach/heading.jpg" %}"></div>
+			<div data-src="{% static "img/approach/heading.jpg" %}" data-media="(min-width: 640px)"></div>
+{#			<div data-src="/assets/approach/2x/heading.jpg" data-media="(min-width: 1024px)"></div>#}
+            <div data-src="{% static "img/approach/heading2.jpg" %}" data-media="(min-width: 1024px)"></div>
+			<noscript><img src="{% static "img/approach/heading.jpg" %}" alt="tried and true custom typography"></noscript>
+		</div>
+		<p>From bottom of our heart, we want to build a system around social network that could benefit our clients by giving them instructions on how to save energy</p>
+		<a href="#hello"><img src="{% static "img/approach/learn-more.png" %}" alt="How our products could help saving power"></a>
+	</div>
+	<article id="hello" class="odd clearfix">
+		<div class="content clearfix">
+			<div class="number">
+				<h4>1</h4>
+			</div>
+			<div class="copy">
+				<h3>Stop wasting</h3>
+				<p>Our products could help in raising people's awareness on energy consumption, to make them stop wasting energy</p>
+				<a href="/contact#contactHello" class="call-to-action reverse">Say Hello<span class="arrow"></span></a>
+			</div>
+		</div>
+		<div data-picture data-alt="hello hand waving">
+			<div data-src="{% static "img/approach/hello.jpg" %}"></div>
+			<div data-src="{% static "img/approach/hello.jpg" %}" data-media="(min-width: 640px)"></div>
+			<div data-src="{% static "img/approach/hello.jpg" %}" data-media="(min-width: 1024px)"></div>
+			<noscript><img src="{% static "img/approach/hello.jpg" %}" alt="hello hand waving"></noscript>
+		</div>
+	</article>
+	<article id="fit" class="even clearfix">
+		<div class="content clearfix">
+			<div class="number">
+				<h4>2</h4>
+			</div>
+			<div class="copy">
+				<h3>Set the goal</h3>
+				<p>Help people to set goal on how much power they want to save, Help people to set the goal on how much power they want to save, Help people to set the goal on how much power they want to save</p>
+				<p>Help people to set goal on how much power they want to save, Help people to set the goal on how much power they want to save, Help people to set the goal on how much power they want to save</p>
+			</div>
+		</div>
+		<div data-picture data-alt="right fit - arrow and bullseye">
+			<div data-src="{% static "img/approach/fit.jpg" %}"></div>
+			<div data-src="{% static "img/approach/fit.jpg" %}" data-media="(min-width: 640px)"></div>
+{#			<div data-src="/assets/approach/2x/fit.jpg" data-media="(min-width: 1024px)"></div>#}
+            <div data-src="{% static "img/approach/fit.jpg" %}" data-media="(min-width: 1024px)"></div>
+			<noscript><img src="{% static "img/approach/fit.jpg" %}" alt="right fit - arrow and bullseye"></noscript>
+		</div>
+	</article>
+	<article id="discovery" class="odd clearfix">
+		<div class="content clearfix">
+			<div class="number">
+				<h4>3</h4>
+			</div>
+			<div class="copy">
+				<h3>Sharing</h3>
+				<p>We aim to build a social network where people can share with other on how they save the power, We aim to build a social network where people can share with other on how they save the power.</p>
+				<p>We aim to build a social network where people can share with other on how they save the power, We aim to build a social network where people can share with other on how they save the power, We aim to build a social network where people can share with other on how they save the power.</p>
+			</div>
+		</div>
+		<div data-picture data-alt="discovery brain">
+			<div data-src="{% static "img/approach/discovery.jpg" %}"></div>
+			<div data-src="{% static "img/approach/discovery.jpg" %}" data-media="(min-width: 640px)"></div>
+{#			<div data-src="/assets/approach/2x/discovery.jpg" data-media="(min-width: 1024px)"></div>#}
+            <div data-src="{% static "img/approach/discovery.jpg" %}" data-media="(min-width: 1024px)"></div>
+			<noscript><img src="{% static "img/approach/discovery.jpg" %}" alt="discovery brain"></noscript>
+		</div>
+	</article>
+	<article id="create-craft" class="even clearfix">
+		<div class="content clearfix">
+			<div class="number">
+				<h4>4</h4>
+			</div>
+			<div class="copy">
+				<h3>Tips & Tricks</h3>
+				<p>We giving out tips and tricks how to save energy in your house in an easy way, We giving out tips and tricks how to save energy in your house in an easy way, We giving out tips and tricks how to save energy in your house in an easy way.</p>
+				<p>We giving out tips and tricks how to save energy in your house in an easy way, We giving out tips and tricks how to save energy in your house in an easy way.</p>
+			</div>
+		</div>
+		<div data-picture data-alt="create and craft pencil construction">
+			<div data-src="{% static "img/approach/create-craft.jpg" %}"></div>
+			<div data-src="{% static "img/approach/create-craft.jpg" %}" data-media="(min-width: 640px)"></div>
+			<div data-src="{% static "img/approach/create-craft.jpg" %}" data-media="(min-width: 1024px)"></div>
+{#            <div data-src="/assets/approach/2x/create-craft.jpg" data-media="(min-width: 1024px)"></div>#}
+			<noscript><img src="{% static "img/approach/create-craft.jpg" %}" alt="create and craft pencil construction"></noscript>
+		</div>
+	</article>
+	<article id="go-time" class="odd clearfix">
+		<div class="content clearfix">
+			<div class="number">
+				<h4>5</h4>
+			</div>
+			<div class="copy">
+				<h3>Into Action</h3>
+				<p>Things are meaningless without action, our alert and tracking system will help people actively checking power compsumtion of their house, Things are meaningless without action, our alert and tracking system will help people actively checking power compsumtion of their house.</p>
+				<p>Things are meaningless without action, our alert and tracking system will help people actively checking power compsumtion of their house.</p>
+				<a href="/book" class="call-to-action reverse">Our Book<span class="arrow"></span></a>
+			</div>
+		</div>
+		<div data-picture data-alt="go time rocket">
+			<div data-src="{% static "img/approach/go-time.jpg" %}"></div>
+			<div data-src="{% static "img/approach/go-time.jpg" %}" data-media="(min-width: 640px)"></div>
+			<div data-src="{% static "img/approach/go-time.jpg" %}" data-media="(min-width: 1024px)"></div>
+{#            <div data-src="/assets/approach/2x/go-time.jpg" data-media="(min-width: 1024px)"></div>#}
+			<noscript><img src="{% static "img/approach/go-time.jpg" %}" alt="go time rocket"></noscript>
+		</div>
+	</article>
+	<article id="analyze-evolve" class="even clearfix">
+		<div class="content clearfix">
+			<div class="number">
+				<h4>6</h4>
+			</div>
+			<div class="copy">
+				<h3>Analyze & Get Better</h3>
+				<p>By studying our statistical data, users can constantly improve, By studying our statistical data, users can constantly improve, By studying our statistical data, users can constantly improve.</p>
+				<p>By studying our statistical data, users can constantly improve, By studying our statistical data, users can constantly improve.</p>
+			</div>
+		</div>
+		<div data-picture data-alt="analyze and evolve chart mountain">
+			<div data-src="{% static "img/approach/analyze-evolve.jpg" %}"></div>
+			<div data-src="{% static "img/approach/analyze-evolve.jpg" %}" data-media="(min-width: 640px)"></div>
+			<div data-src="{% static "img/approach/analyze-evolve.jpg" %}" data-media="(min-width: 1024px)"></div>
+{#            <div data-src="/assets/approach/2x/analyze-evolve.jpg" data-media="(min-width: 1024px)"></div>#}
+			<noscript><img src="{% static "img/approach/analyze-evolve.jpg" %}" alt="analyze and evolve chart mountain"></noscript>
+		</div>
+	</article>
+</section>
+  </div>
+    <div data-role="page" class="contact-container" id="contactUs">
+    	<div class="contactform overlay">
+    		<div data-role="content" class="content">
+    			<ul id="contactnav" class="clearfix">
+    				<li class="highlight"><a href="#contactProject">Start a Relationship</a></li>
+    				<li><a href="#contactApply">Work @ GoodTwin</a></li>
+    				<li><a href="#contactHello">Say Hello</a></li>
+    				<li class="exit"><a href="#back" class="ui-back-btn" data-rel="back">back</a></li>
+    			</ul>
+    			<div class="form-container">
+    				<form action="/contact/project" method="post" id="contactProject" class="clearfix">
+    					<div class="form-area">
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="projectName">Full Name <span class="required">*</span></label>
+    							<input type="text" name="project[fullname]" id="projectName" value="" class="required" minlength="2"/>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="projectTitle">Title</label>
+    							<input type="text" name="project[title]" id="projectTitle" value="" />
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="projectCompany">Company <span class="required">*</span></label>
+    							<input type="text" name="project[company]" id="projectCompany" value="" class="required" minlength="2" />
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="projectEmail">Email <span class="required">*</span></label>
+    							<input type="text" name="project[email]" id="projectEmail" value="" class="required email" />
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="projectPhone">Phone</label>
+    							<input type="text" name="project[phone]" id="projectPhone" value=""/>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    						<label for="projectBudget" class="select">Budget <span class="required">*</span></label>
+    						<select name="project[budget]" id="projectBudget">
+    							<option value="under25k">Under $25,000</option>
+    							<option value="25k-40K">$25,001 - $40,000</option>
+    							<option value="40k-60k">$40,001 - $60,000</option>
+    							<option value="50kandabove">$60,001 and Above</option>
+    							<option value="not sure">I'm not sure.</option>
+    						</select>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset double">
+    							<label for="projectMessage">How we can help?</label>
+    							<textarea cols="40" rows="8" name="project[message]" id="projectMessage"></textarea>
+    						</div>
+    					</div>
+    					<div class="submit-area">
+    						<div data-role="fieldcontain">
+    							<input class="call-to-action darkbox" type="submit" value="Submit" />
+    							<span class="arrow"></span>
+    						</div>
+    					</div>
+    				</form>
+     		 		<form action="/contact/apply" method="post" id="contactApply" class="clearfix" enctype="multipart/form-data">
+    		 			<div class="form-area">
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="applyName">Full Name <span class="required">*</span></label>
+    							<input type="text" name="apply[name]" id="applyName" value="" class="required" minlength="2"/>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="applyEmail">Email <span class="required">*</span></label>
+    							<input type="text" name="apply[email]" id="applyEmail" value="" class="required email"/>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="applyPhone">Phone</label>
+    							<input type="text" name="apply[phone]" id="applyPhone" value=""/>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="applyPosition">Desired Position<span class="required">*</span></label>
+    							<select name="apply[position]" id="applyPosition">
+    								<option value="Misc">I just want to work at GoodTwin!</option>
+    							</select>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="applyWebsite">Personal/Portfolio URL</label>
+    							<input type="text" name="apply[website]" id="applyWebsite" value="" />
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="applyResume">Resume</label>
+    							<input type="file" name="apply[resume]" id="applyResume"  />
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset double">
+    							<label for="applyMessage">Tell us about a favorite project. <span class="required">*</span></label>
+    							<textarea cols="40" rows="4" name="apply[message]" id="applyMessage" class="required"></textarea>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset double">
+    							<label for="applyProblem">Tell us how you solved a difficult problem or situation. <span class="required">*</span></label>
+    							<textarea cols="40" rows="4" name="apply[problem]" id="applyProblem" class="required"></textarea>
+    						</div>
+    					</div>
+    					<div class="submit-area">
+    						<div data-role="fieldcontain">
+    							<input class="call-to-action darkbox" type="submit" value="Submit" />
+    							<span class="arrow"></span>
+    						</div>
+    					</div>
+    				</form>
+    				<form action="/contact/hello" method="post" id="contactHello" class="clearfix">
+    					<div class="form-area">
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="helloName">Full Name <span class="required">*</span></label>
+    							<input type="text" name="hello[name]" id="helloName" value="" class="required" minlength="2"/>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="helloEmail">Email <span class="required">*</span></label>
+    							<input type="text" name="hello[email]" id="helloEmail" value="" class="required email"/>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset">
+    							<label for="helloPhone">Phone</label>
+    							<input type="text" name="hello[phone]" id="helloPhone" value=""/>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset"> 
+    							<label for="helloCompany">Company <span class="required">*</span></label>
+    							<input type="text" name="hello[company]" id="helloCompany" value="" class="required"/>
+    						</div>
+    						<div data-role="fieldcontain" class="fieldset double">
+    							<label for="helloTopic">What would you like to chat about?</label>
+    							<textarea cols="40" rows="8" name="hello[topic]" id="helloTopic"></textarea>
+    						</div>
+    					</div>
+    					<div class="submit-area">
+    						<div data-role="fieldcontain">
+    							<input class="call-to-action darkbox" type="submit" value="Submit" />
+    							<span class="arrow"></span>
+    						</div>
+    					</div>
+    				</form>
+    			</div>
+    			<div id="connect">
+    				<div class="followus">
+    					<h5>FOLLOW US</h5>
+    					<a href="http://www.twitter.com/goodtwin" target="blank" class="twitter">@goodtwin</a>
+    					<a href="http://www.facebook.com/goodtwindesign" class="facebook" target="blank">Facebook</a>
+    					<a href="http://4sq.com/cJGijN" target="blank" class="foursquare">Foursquare</a>
+    				</div>
+    				<div class="address">
+    					<a href="http://g.co/maps/kuxeg" target="blank" class="maps">Google Maps</a>
+    					<p>
+    						4383 Nicholas St. #203
+    						Omaha, Nebraska 68131
+    					</p>
+    				</div>
+    				<h3 class="phone">402-915-6400</h3>
+    			</div>
+    		</div><!-- /content -->
+    	</div>
+    
+    </div><!-- /page -->    <footer>
+    	<div class="footer-content clearfix">
+    		<div class="row-1">
+    			<div class="phone-number">
+    				<h4>P 402-915-6400</h4>
+    			</div>
+    			<div class="address">
+    				<span>4383 Nicholas St. #203<br />Omaha, Nebraska 68131</span>
+    			</div>
+    		</div>
+    		<div class="row-2">
+    			<div class="links">
+    				<ul>
+    					<li id="twitter"><a href="http://www.twitter.com/goodtwin">Twitter</a></li>
+    					<li id="facebook"><a href="http://www.facebook.com/goodtwindesign">Facekbook</a></li>
+    					<li id="foursquare"><a href="http://4sq.com/cJGijN">Foursquare</a></li>
+    				</ul>
+    			</div>
+    			<div class="copyright">
+    				<span>&copy;
+    		        	<script type="text/javascript">
+    						var d = new Date();
+    						document.write(d.getFullYear());
+    					</script>
+    					GoodTwin
+    				</span>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+    
+  <script>
+  	var _gaq=[['_setAccount','UA-34748576-1'],['_trackPageview']];
+  	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  	s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
