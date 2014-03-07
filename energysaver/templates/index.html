@@ -62,9 +62,9 @@
       </a>
       <ul class="nav-elems">
         <li data-subnav=".about" ><a href="/about/" data-pjax-link>About</a></li>
-        <li><a href="/life/" data-pjax-link>Life</a></li>
-        <li data-subnav=".book" ><a href="/book/" data-pjax-link>Book</a></li>
-        <li class="contact"><a href="/contact">Hire Us</a></li>
+        <li><a href="/life/" data-pjax-link>Profile</a></li>
+        <li data-subnav=".book" ><a href="/book/" data-pjax-link>Social</a></li>
+        <li class="contact"><a href="/contact">Contact Us</a></li>
       </ul>
     </nav>
     <nav class="secondaries">
@@ -154,7 +154,7 @@
 	        </div>
 	        <div class="layer layer2" data-parallax-depth="layer2">
 	          <div class="coaster bg-mainscene">
-	            <img src="{% static "img/experience.png" %}" class="bg-coaster" alt="background coaster" />
+	            <img src="{% static "img/smart_house.jpg" %}" class="bg-coaster" alt="background coaster" />
 	            <div class="cycle-counter fb-like">
 	              <img src="{% static "img/ly2-fblike.png" %}" alt="coaster facebook likes" />
 	              <div class="cycle-container">
@@ -287,32 +287,42 @@
 			<ul class="clearfix">
 				<li>
 					<a href="/book/bigbrain/">
-						<img src="/assets/home/folio/bigbrain.jpg" alt="big brain tattoos" />
+						<img src="{% static "img/user/bigbrain.jpg" %}" alt="big brain tattoos" />
 					</a>
 				</li>
 				<li>
 					<a href="/book/ovaova/">
-						<img src="/assets/home/folio/ovaova.jpg" alt="Ova Ova natural birth control" />
+						<img src="{% static "img/user/bigbrain.jpg" %}" alt="Ova Ova natural birth control" />
 					</a>
 				</li>
 				<li>
 					<a href="/book/eliteform/">
-						<img src="/assets/home/folio/eliteform.jpg" alt="Elite Form" />
+						<img src="{% static "img/user/bigbrain.jpg" %}" alt="Elite Form" />
 					</a>
 				</li>
 				<li>
 					<a href="/book/adventip/">
-						<img src="/assets/home/folio/adventip.jpg" alt="Advent - an Intellectual Property Firm" />
+						<img src="{% static "img/user/bigbrain.jpg" %}" alt="Advent - an Intellectual Property Firm" />
 					</a>
 				</li>
 				<li>
 					<a href="/book/corkscrew/">
-						<img src="/assets/home/folio/corkscrewwine.jpg" alt="corkscrew wine and cheese" />
+						<img src="{% static "img/user/bigbrain.jpg" %}" alt="corkscrew wine and cheese" />
 					</a>	
 				</li>
 				<li>
 					<a href="/book/walmart">
-						<img src="/assets/home/folio/walmart.jpg" alt="Walmart Employee Quiz" />
+						<img src="{% static "img/user/bigbrain.jpg" %}" alt="Walmart Employee Quiz" />
+					</a>
+				</li>
+                <li>
+					<a href="/book/corkscrew/">
+						<img src="{% static "img/user/bigbrain.jpg" %}" alt="corkscrew wine and cheese" />
+					</a>
+				</li>
+				<li>
+					<a href="/book/walmart">
+						<img src="{% static "img/user/bigbrain.jpg" %}" alt="Walmart Employee Quiz" />
 					</a>
 				</li>
 			</ul>		
@@ -345,7 +355,7 @@
 			</li>
 		</ul>
 	</div></div>
-<script src="/assets/home-c1f9b38f33964969ca5525b44e25122d.js" type="text/javascript"></script>
+<script src="{% static "energysaver2.js" %}" type="text/javascript"></script>
   </div>
     <div data-role="page" class="contact-container" id="contactUs">
     	<div class="contactform overlay">
