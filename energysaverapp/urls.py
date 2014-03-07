@@ -7,6 +7,7 @@ from energysaverapp import views
 urlpatterns = patterns('',
     url(r'^index/', views.index, name='index'),
     url(r'^approach/', views.approach, name='index'),
+    url(r'^social/', views.socialView, name='social'),
 )
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns += staticfiles_urlpatterns()

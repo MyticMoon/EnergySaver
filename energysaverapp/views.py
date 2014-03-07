@@ -19,3 +19,7 @@ def approach(request):
     # mainBody = t.render(Context({}))
     #return HttpResponse('This is first page of energy saver')
     return render_to_response('approach.html', None)
+
+
+def socialView(request):
+    return render_to_response('social.html', None)
