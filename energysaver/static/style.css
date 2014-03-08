@@ -1,0 +1,27 @@
+span.green {
+  color:green !important;
+}
+
+strong.green {
+  color:green;
+}
+
+
+#pie-chart {
+  min-width:310px; 
+  height:400px;
+  margin:0 auto;
+}
+
+#time-series {
+  padding: 30px 200px;
+  color:red;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#47c7ea !important;
+}
+
+.media-body {
+  padding-top:20px;
+}

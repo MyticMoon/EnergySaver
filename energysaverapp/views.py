@@ -23,3 +23,7 @@ def approach(request):
 
 def socialView(request):
     return render_to_response('social.html', None)
+
+
+def personalView(request):
+    return render_to_response('personal.html', None)

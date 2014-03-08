@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+	<header class="navbar navbar-inverse" role="banner">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="home.html"><strong>Energy<span style="color:green">Saver</span></strong></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<nav class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
+				<ul class="nav navbar-nav navbar-right">
+					<li {% if section == 'Use Cases' %}class="active"{% endif %}><a href="{% url 'gui/usecase' %}"><strong>Use Cases</strong></a></li>
+					<li {% if section == 'Developer' %}class="active"{% endif %}><a href="{% url 'gui/developer' %}"><strong>Developer</strong></a></li>
+				</ul>
+			</nav><!-- /.navbar-collapse -->
+		</div>
+	</header>
+
+	<!-- User picture display -->
+	<main>
+		<div class="container">
+			<div class="col-md-3">
+        <img src="img/profile_pic.jpg" width="180" height="180" alt="" class="img-circle img-thumbnail">
+			</div>
+
+      <div class="col-md-9">
+       <div class="user-info">
+         <h2><strong>John <span class="green">Appleseed</span></strong></h2>
+         <p><strong>Number of devices: </strong> 6</p>
+        </div> 
+      </div>
+      <div class="col-md-12">
+        
+      </div>
+    </div>
+	</main>
+  <div class="row">
+    <div class="col-md-12" style="padding-left:10%;padding-right:10%">
+      <ol class="breadcrumb">
+        <li><a href="personal.html">Your Data</a></li>
+        <li><a href="social.html">Social Links</a></li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!-- Pie chart -->
+    <div class="col-md-6" style="padding-top:30px">
+      <div id="pie-chart">
+      </div>
+    </div>
+
+    <!-- Table: breakdown -->
+    <div class="col-md-5" style="padding-top:30px">
+
+      <h3 style="padding:0 0 10px 0">Power Usage Breakdown</h3>
+
+      <table class="table table-striped table-hovered table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Device</th>
+            <th>Place</th>
+            <th>Usage</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td><button class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-off"></span> Turn off</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td><button class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-off"></span> Turn off</button></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td><button class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-off"></span> Turn off</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add Egg</button>
+
+    </div>
+
+  </div>
+
+  <hr>
+  <!-- Time seiries -->
+  <div class="row">
+    <div class="col-md-12" style="padding-left:5%;padding-right:5%">
+      <div id="time-series">
+      </div>
+    </div>
+  </div>
+
+  <!-- Analysis / Tooltips -->
+
+  <script type="text/javascript" src="js/holder.min.js"></script>
+  <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/highcharts.js"></script>
+  <script type="text/javascript" src="js/highchart_sample.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      draw_pie_chart('pie-chart');
+      draw_time_series('time-series');
+    });
+  </script>
+</body>
+
+</html>
