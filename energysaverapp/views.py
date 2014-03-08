@@ -27,3 +27,7 @@ def socialView(request):
 
 def personalView(request):
     return render_to_response('personal.html', None)
+
+
+def infoGraphView(request):
+    return render_to_response('infoGraph.html', None)
