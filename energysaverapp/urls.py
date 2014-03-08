@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     url(r'^approach/', views.approach, name='index'),
     url(r'^social/', views.socialView, name='social'),
     url(r'^personal/', views.personalView, name='social'),
-    url(r'^infograp/', views.infoGraphView, name='social'),
+    url(r'^infograph/', views.infoGraphView, name='social'),
 )
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns += staticfiles_urlpatterns()
